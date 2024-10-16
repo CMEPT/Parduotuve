@@ -1,1 +1,31 @@
 
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirkinių Krepšelis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body>
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mt-10">Pirkinių krepšelis veikia!</h1>
+        <p class="mt-4 text-xl">Dabar galima pridėti prekes į krepšelį ir naudotis funkcijomis.</p>
+    </div>
+    
+    <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Produktų sąrašas čia -->
+    </div>
+
+    <div class="cart fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-white p-4 shadow-lg flex justify-between items-center w-full max-w-lg">
+        <div class="cart-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png" alt="Krepšelis" />
+            <div id="cart-count" class="cart-count bg-red-500 text-white rounded-full px-2" style="display: none;">0</div>
+        </div>
+        <div class="total-amount text-2xl font-bold" id="total-amount">0€</div>
+        <button id="checkout-btn" class="checkout-btn bg-green-500 text-white py-2 px-4 rounded">Apmokėti</button>
+    </div>
+
+    <!-- Pridėti čia JS skriptai, jeigu reikia -->
+</body>
+</html>
